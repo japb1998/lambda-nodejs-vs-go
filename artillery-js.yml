@@ -1,0 +1,33 @@
+config:
+  # This is a test server run by team Artillery
+  # It's designed to be highly scalable
+  target: https://fwofyowpqa.execute-api.us-east-1.amazonaws.com
+  phases:
+    - duration: 10
+      arrivalRate: 1
+      rampTo: 2
+      name: Warm up phase
+    - duration: 20
+      arrivalRate: 5
+      name: Ramp up load
+    - duration: 10
+      arrivalRate: 10
+      name: Spike phase
+  # Load & configure a couple of useful plugins
+  # https://docs.art/reference/extensions
+  plugins:
+    ensure: {}
+    apdex: {}
+    metrics-by-endpoint: {}
+  apdex:
+    threshold: 100
+  ensure:
+      thresholds:
+        - http.response_time.p99: 100
+        - http.response_time.p95: 75
+# scenarios is where we define what the virtual users created by Artillery will do. A scenario is usually a sequence of steps that describes a user session in the app.
+scenarios:
+  - name: "Node.js"
+    flow:
+      - get:
+          url: "/hello-js"

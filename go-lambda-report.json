@@ -1,0 +1,439 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Golang": 215,
+      "vusers.created": 215,
+      "http.requests": 215,
+      "http.codes.200": 215,
+      "http.responses": 215,
+      "http.downloaded_bytes": 2795,
+      "apdex.satisfied": 0,
+      "apdex.tolerated": 214,
+      "apdex.frustrated": 1,
+      "plugins.metrics-by-endpoint./hello-go.codes.200": 215,
+      "vusers.failed": 0,
+      "vusers.completed": 215
+    },
+    "rates": {
+      "http.request_rate": 14
+    },
+    "firstCounterAt": 1706907872329,
+    "firstHistogramAt": 1706907873170,
+    "lastCounterAt": 1706907911923,
+    "lastHistogramAt": 1706907911923,
+    "firstMetricAt": 1706907872329,
+    "lastMetricAt": 1706907911923,
+    "period": 1706907910000,
+    "summaries": {
+      "http.response_time": {
+        "min": 50,
+        "max": 686,
+        "count": 215,
+        "mean": 60.8,
+        "p50": 56.3,
+        "median": 56.3,
+        "p75": 58.6,
+        "p90": 62.2,
+        "p95": 67.4,
+        "p99": 98.5,
+        "p999": 117.9
+      },
+      "plugins.metrics-by-endpoint.response_time./hello-go": {
+        "min": 50,
+        "max": 686,
+        "count": 215,
+        "mean": 60.8,
+        "p50": 56.3,
+        "median": 56.3,
+        "p75": 58.6,
+        "p90": 62.2,
+        "p95": 67.4,
+        "p99": 98.5,
+        "p999": 117.9
+      },
+      "vusers.session_length": {
+        "min": 124.7,
+        "max": 847.4,
+        "count": 215,
+        "mean": 139.8,
+        "p50": 133,
+        "median": 133,
+        "p75": 138.4,
+        "p90": 144,
+        "p95": 149.9,
+        "p99": 175.9,
+        "p999": 198.4
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 50,
+        "max": 686,
+        "count": 215,
+        "mean": 60.8,
+        "p50": 56.3,
+        "median": 56.3,
+        "p75": 58.6,
+        "p90": 62.2,
+        "p95": 67.4,
+        "p99": 98.5,
+        "p999": 117.9
+      },
+      "plugins.metrics-by-endpoint.response_time./hello-go": {
+        "min": 50,
+        "max": 686,
+        "count": 215,
+        "mean": 60.8,
+        "p50": 56.3,
+        "median": 56.3,
+        "p75": 58.6,
+        "p90": 62.2,
+        "p95": 67.4,
+        "p99": 98.5,
+        "p999": 117.9
+      },
+      "vusers.session_length": {
+        "min": 124.7,
+        "max": 847.4,
+        "count": 215,
+        "mean": 139.8,
+        "p50": 133,
+        "median": 133,
+        "p75": 138.4,
+        "p90": 144,
+        "p95": 149.9,
+        "p99": 175.9,
+        "p999": 198.4
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Golang": 11,
+        "vusers.created": 11,
+        "http.requests": 11,
+        "http.codes.200": 11,
+        "http.responses": 11,
+        "http.downloaded_bytes": 143,
+        "apdex.satisfied": 0,
+        "apdex.tolerated": 10,
+        "apdex.frustrated": 1,
+        "plugins.metrics-by-endpoint./hello-go.codes.200": 11,
+        "vusers.failed": 0,
+        "vusers.completed": 11
+      },
+      "rates": {
+        "http.request_rate": 3
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1706907872329,
+      "firstHistogramAt": 1706907873170,
+      "lastCounterAt": 1706907879533,
+      "lastHistogramAt": 1706907879533,
+      "firstMetricAt": 1706907872329,
+      "lastMetricAt": 1706907879533,
+      "period": "1706907870000",
+      "summaries": {
+        "http.response_time": {
+          "min": 55,
+          "max": 686,
+          "count": 11,
+          "mean": 118.5,
+          "p50": 61,
+          "median": 61,
+          "p75": 63.4,
+          "p90": 76,
+          "p95": 76,
+          "p99": 76,
+          "p999": 76
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 55,
+          "max": 686,
+          "count": 11,
+          "mean": 118.5,
+          "p50": 61,
+          "median": 61,
+          "p75": 63.4,
+          "p90": 76,
+          "p95": 76,
+          "p99": 76,
+          "p999": 76
+        },
+        "vusers.session_length": {
+          "min": 135,
+          "max": 847.4,
+          "count": 11,
+          "mean": 214.2,
+          "p50": 149.9,
+          "median": 149.9,
+          "p75": 159.2,
+          "p90": 172.5,
+          "p95": 172.5,
+          "p99": 172.5,
+          "p999": 172.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 55,
+          "max": 686,
+          "count": 11,
+          "mean": 118.5,
+          "p50": 61,
+          "median": 61,
+          "p75": 63.4,
+          "p90": 76,
+          "p95": 76,
+          "p99": 76,
+          "p999": 76
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 55,
+          "max": 686,
+          "count": 11,
+          "mean": 118.5,
+          "p50": 61,
+          "median": 61,
+          "p75": 63.4,
+          "p90": 76,
+          "p95": 76,
+          "p99": 76,
+          "p999": 76
+        },
+        "vusers.session_length": {
+          "min": 135,
+          "max": 847.4,
+          "count": 11,
+          "mean": 214.2,
+          "p50": 149.9,
+          "median": 149.9,
+          "p75": 159.2,
+          "p90": 172.5,
+          "p95": 172.5,
+          "p99": 172.5,
+          "p999": 172.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Golang": 44,
+        "vusers.created": 44,
+        "http.requests": 44,
+        "http.codes.200": 44,
+        "http.responses": 44,
+        "http.downloaded_bytes": 572,
+        "apdex.satisfied": 0,
+        "apdex.tolerated": 44,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./hello-go.codes.200": 44,
+        "vusers.failed": 0,
+        "vusers.completed": 44
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "firstCounterAt": 1706907880333,
+      "firstHistogramAt": 1706907880480,
+      "lastCounterAt": 1706907889658,
+      "lastHistogramAt": 1706907889658,
+      "firstMetricAt": 1706907880333,
+      "lastMetricAt": 1706907889658,
+      "period": "1706907880000",
+      "http.request_rate": null,
+      "summaries": {
+        "http.response_time": {
+          "min": 52,
+          "max": 92,
+          "count": 44,
+          "mean": 59.1,
+          "p50": 58.6,
+          "median": 58.6,
+          "p75": 59.7,
+          "p90": 64.7,
+          "p95": 66,
+          "p99": 73,
+          "p999": 73
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 52,
+          "max": 92,
+          "count": 44,
+          "mean": 59.1,
+          "p50": 58.6,
+          "median": 58.6,
+          "p75": 59.7,
+          "p90": 64.7,
+          "p95": 66,
+          "p99": 73,
+          "p999": 73
+        },
+        "vusers.session_length": {
+          "min": 130,
+          "max": 171.3,
+          "count": 44,
+          "mean": 138.6,
+          "p50": 135.7,
+          "median": 135.7,
+          "p75": 144,
+          "p90": 147,
+          "p95": 149.9,
+          "p99": 156,
+          "p999": 156
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 52,
+          "max": 92,
+          "count": 44,
+          "mean": 59.1,
+          "p50": 58.6,
+          "median": 58.6,
+          "p75": 59.7,
+          "p90": 64.7,
+          "p95": 66,
+          "p99": 73,
+          "p999": 73
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 52,
+          "max": 92,
+          "count": 44,
+          "mean": 59.1,
+          "p50": 58.6,
+          "median": 58.6,
+          "p75": 59.7,
+          "p90": 64.7,
+          "p95": 66,
+          "p99": 73,
+          "p999": 73
+        },
+        "vusers.session_length": {
+          "min": 130,
+          "max": 171.3,
+          "count": 44,
+          "mean": 138.6,
+          "p50": 135.7,
+          "median": 135.7,
+          "p75": 144,
+          "p90": 147,
+          "p95": 149.9,
+          "p99": 156,
+          "p999": 156
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Golang": 50,
+        "vusers.created": 50,
+        "http.requests": 50,
+        "http.codes.200": 50,
+        "http.responses": 50,
+        "http.downloaded_bytes": 650,
+        "apdex.satisfied": 0,
+        "apdex.tolerated": 50,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./hello-go.codes.200": 50,
+        "vusers.failed": 0,
+        "vusers.completed": 50
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1706907890327,
+      "firstHistogramAt": 1706907890461,
+      "lastCounterAt": 1706907899650,
+      "lastHistogramAt": 1706907899650,
+      "firstMetricAt": 1706907890327,
+      "lastMetricAt": 1706907899650,
+      "period": "1706907890000",
+      "summaries": {
+        "http.response_time": {
+          "min": 50,
+          "max": 118,
+          "count": 50,
+          "mean": 57,
+          "p50": 55.2,
+          "median": 55.2,
+          "p75": 58.6,
+          "p90": 59.7,
+          "p95": 62.2,
+          "p99": 77.5,
+          "p999": 77.5
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 50,
+          "max": 118,
+          "count": 50,
+          "mean": 57,
+          "p50": 55.2,
+          "median": 55.2,
+          "p75": 58.6,
+          "p90": 59.7,
+          "p95": 62.2,
+          "p99": 77.5,
+          "p999": 77.5
+        },
+        "vusers.session_length": {
+          "min": 124.7,
+          "max": 196.5,
+          "count": 50,
+          "mean": 134.7,
+          "p50": 133,
+          "median": 133,
+          "p75": 135.7,
+          "p90": 141.2,
+          "p95": 144,
+          "p99": 156,
+          "p999": 156
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 50,
+          "max": 118,
+          "count": 50,
+          "mean": 57,
+          "p50": 55.2,
+          "median": 55.2,
+          "p75": 58.6,
+          "p90": 59.7,
+          "p95": 62.2,
+          "p99": 77.5,
+          "p999": 77.5
+        },
+        "plugins.metrics-by-endpoint.response_time./hello-go": {
+          "min": 50,
+          "max": 118,
+          "count": 50,
+          "mean": 57,
+          "p50": 55.2,
+          "median": 55.2,
+          "p75": 58.6,
+          "p90": 59.7,
+          "p95": 62.2,
+          "p99": 77.5,
+          "p999": 77.5
+        },
+        "vusers.session_length": {
+          "min": 124.7,
+          "max": 196.5,
+          "count": 50,
+          "mean": 134.7,
+          "p50": 133,
+          "median": 133,
+          "p75": 135.7,
+          "p90": 141.2,
+          "p95": 144,
+          "p99": 156,
+          "p999": 156
+        }
+      }
+    }
+  ]
+}

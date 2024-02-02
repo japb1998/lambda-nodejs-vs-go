@@ -1,0 +1,42 @@
+service: lambda-nodejs-vs-go
+
+frameworkVersion: "3"
+
+plugins:
+  - serverless-deployment-bucket
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: dev
+  region: us-east-1
+  architecture: arm64
+  
+custom:
+  deploymentBucket:
+    name: ${self:service}-deployment-bucket-${opt:stage, self:provider.stage}
+    serverSideEncryption: AES256
+
+package:
+    individually: true
+
+functions:
+  hello:
+    handler: node-lambda/handler.hello
+    memorySize: 128
+    events:
+      - httpApi:
+          path: /hello-js
+          method: '*'
+  helloGo:
+    handler: bootstrap
+    runtime: provided.al2
+    architecture: arm64
+    package:
+      artifact: bin/go-lambda.zip
+    memorySize: 128
+    events:
+      - httpApi:
+          path: /hello-go
+          method: '*'
+
