@@ -1,7 +1,7 @@
 config:
   # This is a test server run by team Artillery
   # It's designed to be highly scalable
-  target: https://fwofyowpqa.execute-api.us-east-1.amazonaws.com
+  target: https://8gbm1uluv8.execute-api.us-east-1.amazonaws.com/dev
   phases:
     - duration: 10
       arrivalRate: 1

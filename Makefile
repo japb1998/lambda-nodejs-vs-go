@@ -7,6 +7,7 @@ deploy:
 
 load-js:
 	artillery run --output js-lambda-report.json artillery-js.yml
+	artillery report js-lambda-report.json
 load-go:
 	artillery run --output go-lambda-report.json artillery-go.yml
 	artillery report go-lambda-report.json

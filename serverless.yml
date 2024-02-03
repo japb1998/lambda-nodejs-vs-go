@@ -11,6 +11,15 @@ provider:
   stage: dev
   region: us-east-1
   architecture: arm64
+  tracing:
+    lambda: true
+    apiGateway: true
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Resource: '*'
+          Action: 's3:GetObject'
   
 custom:
   deploymentBucket:
@@ -24,19 +33,26 @@ functions:
   hello:
     handler: node-lambda/handler.hello
     memorySize: 128
+    package:
+      include:
+        - "node-lambda/**"
+    environment:
+      BUCKET: go-vs-nodejs-bucket
     events:
-      - httpApi:
+      - http:
           path: /hello-js
-          method: '*'
+          method: GET
   helloGo:
     handler: bootstrap
     runtime: provided.al2
     architecture: arm64
+    environment:
+      BUCKET: go-vs-nodejs-bucket
     package:
       artifact: bin/go-lambda.zip
     memorySize: 128
     events:
-      - httpApi:
+      - http:
           path: /hello-go
-          method: '*'
+          method: GET
 
